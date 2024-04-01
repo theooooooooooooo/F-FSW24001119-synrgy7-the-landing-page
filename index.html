@@ -23,63 +23,74 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg--blue px-4">
-        <div class="container-fluid mx-5 px-5 py-4">
+    <nav class="navbar navbar-expand-lg bg--blue">
+        <div class="container-fluid col-lg-10 py-4 d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="/">
                 <img src="images\logo.svg" alt="logo" />
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav gap-3 justify-content-end flex-grow-1 me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#our-services">Our Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#why-us">Why Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#testimonial">Testimonial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#FAQ">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn--primary-green">Register</button>
-                    </li>
-                </ul>
+            <div class="offcanvas offcanvas-end sm-w-50" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BCR</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body py-0">
+                    <ul class="navbar-nav gap-3 justify-content-end flex-grow-1 me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#our-services">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#why-us">Why Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#testimonial">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#FAQ">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn--primary-green">Register</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
-    <header class="bg--blue d-flex flex-row align-items-center ps-5 overflow-hidden">
-        <article class="mx-auto ms-5 ps-4 d-flex flex-column align-items-start gap-2">
-            <h1 class="header__title">
-                Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
-            </h1>
-            <p class="header__article mt-2 mr-152 text-sm-start">
-                Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
-            </p>
-            <a href="/">
-                <button class="btn--primary-green">Mulai Sewa Mobil</button>
-            </a>
-        </article>
-        <aside>
-            <img src="images\img_car.png" alt="car" class="" />
-        </aside>
-    </header>
 
-    <section id="our-services" class="container col-xxl-8 px-5 py-5 align-items-center justify-content-center">
-        <article class="row flex-lg-row align-items-center g-5 py-5 justify-content-center">
-            <div class="col-10 col-sm-8 col-lg-6 px-5">
+    <section id="hero" class="bg--blue mb-5">
+        <article class="row no-margin align-items-center justify-content-end">
+            <div class="col-lg-5 col-sm col-md align-items-center">
+                <h1 class="header__title">
+                    Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
+                </h1>
+                <div class="col-sm-10">
+                    <p class="header__article mt-2 text-sm-start">
+                        Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
+                    </p>
+                </div>
+                <a href="/">
+                    <button class="btn--primary-green mb-5">Mulai Sewa Mobil</button>
+                </a>
+            </div>
+            <div class="no-padding col-10 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-end">
+                <img src="images\img_car.png" style="max-width: 100%; height: auto" class="img-fluid " alt="car" loading="lazy" />
+            </div>
+        </article>
+    </section>
+
+    <section id="our-services" class="container px-5 py-5 mb-5 align-items-center justify-content-center">
+        <article class="row align-items-center g-5 justify-content-center">
+            <div class="col-10 col-sm-12 col-lg-6">
                 <img src="images/img_service.png" style="max-width: 100%; height: auto" class="me-5 d-block mx-lg-auto img-fluid" alt="service lady" loading="lazy" />
             </div>
-            <div class="col-lg-5">
-                <h2 class="why-us__title">
+            <div class="col-lg-6">
+                <h2 class="services__title pb-3 fw-bold">
                     Best Car Rental for any kind of trip in (Lokasimu)!
                 </h2>
-                <p class="services__article">
+                <p class="col-lg-12 services__article pb-3">
                     Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.
                 </p>
                 <div class="d-flex flex-row gap-3">
@@ -87,7 +98,7 @@
             <i class="fas fa-circle fa-stack-2x color-primary-blue-01"></i>
             <i class="fas fa-check fa-stack-1x fa-inverse color-primary-blue-04"></i>
           </span>
-                    <p class="text-sm font-bold leading-5">
+                    <p class="services__article leading-5">
                         Sewa Mobil dengan Supir di Bali 12 Jam
                     </p>
                 </div>
@@ -96,7 +107,7 @@
             <i class="fas fa-circle fa-stack-2x color-primary-blue-01"></i>
             <i class="fas fa-check fa-stack-1x fa-inverse color-primary-blue-04"></i>
           </span>
-                    <p class="text-sm font-bold leading-5">
+                    <p class="services__article leading-5">
                         Sewa Mobil Lepas Kunci di Bali 24 Jam
                     </p>
                 </div>
@@ -105,7 +116,7 @@
             <i class="fas fa-circle fa-stack-2x color-primary-blue-01"></i>
             <i class="fas fa-check fa-stack-1x fa-inverse color-primary-blue-04"></i>
           </span>
-                    <p class="text-sm font-bold leading-5">
+                    <p class="services__article leading-5">
                         Sewa Mobil Jangka Panjang Bulanan
                     </p>
                 </div>
@@ -114,7 +125,7 @@
             <i class="fas fa-circle fa-stack-2x color-primary-blue-01"></i>
             <i class="fas fa-check fa-stack-1x fa-inverse color-primary-blue-04"></i>
           </span>
-                    <p class="text-sm font-bold leading-5">
+                    <p class="services__article leading-5">
                         Gratis Antar - Jemput Mobil di Bandara
                     </p>
                 </div>
@@ -123,7 +134,7 @@
             <i class="fas fa-circle fa-stack-2x color-primary-blue-01"></i>
             <i class="fas fa-check fa-stack-1x fa-inverse color-primary-blue-04"></i>
           </span>
-                    <p class="text-sm font-bold leading-5">
+                    <p class="services__article leading-5">
                         Layanan Airport Transfer / Drop In Out
                     </p>
                 </div>
@@ -131,12 +142,12 @@
         </article>
     </section>
 
-    <section id="why-us" class="container d-flex flex-column px-5 pb-5 align-items-start">
+    <section id="why-us" class="container d-flex flex-column px-5 pb-5 mb-5 align-items-start">
         <div class="row">
-            <h2 class="why-us__title">Why Us?</h2>
-            <p class="why-us__article">Mengapa harus pilih Binar Car Rental?</p>
+            <h2 class="why-us__title fw-bold mb-4">Why Us?</h2>
+            <p class="why-us__article mb-5">Mengapa harus pilih Binar Car Rental?</p>
             <div class="d-flex flex-column gap-4">
-                <div class="row">
+                <div class="row card-row">
                     <div class="col-sm">
                         <div class="card">
                             <div class="card-body p-4">
@@ -204,18 +215,18 @@
         </div>
     </section>
 
-    <section id="testimonial" class="d-flex flex-column align-items-center">
-        <h2 class="testimonial__title mb-3">Testimonial</h2>
+    <section id="testimonial" class="d-flex flex-column align-items-center my-5 py-5">
+        <h2 class="testimonial__title fw-bold mb-3">Testimonial</h2>
         <p class="testimonial__article mb-5">
             Berbagai review positif dari para pelanggan kami
         </p>
         <div id="slider" class="owl-carousel owl-theme">
-            <div class="card px-5 py-5 bg--blue">
-                <div class="row align-items-center justify-items-center gap-4">
-                    <div class="col-lg-2">
+            <div class="card col-lg-12 px-5 py-5 bg--blue align-items-center justify-items-center">
+                <div class="row d-flex align-items-center justify-items-center gap-4">
+                    <div class="col-lg-2 col-md-5 col-sm-5">
                         <img src="images\img_testi1.png" />
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-lg-9 my-5">
                         <i class="fa-solid fa-star" style="color: var(--danger)"></i>
                         <i class="fa-solid fa-star" style="color: var(--danger)"></i>
                         <i class="fa-solid fa-star" style="color: var(--danger)"></i>
@@ -228,12 +239,12 @@
                     </div>
                 </div>
             </div>
-            <div class="card px-5 py-5 bg--blue">
-                <div class="row align-items-center justify-items-center gap-4">
-                    <div class="col-lg-2">
+            <div class="card col-lg-12 px-5 py-5 bg--blue">
+                <div class="row d-flex align-items-center justify-items-center gap-4">
+                    <div class="col-lg-2 col-md-5">
                         <img src="images\img_testi2.png" />
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-lg-9 my-5">
                         <i class="fa-solid fa-star" style="color: var(--danger)"></i>
                         <i class="fa-solid fa-star" style="color: var(--danger)"></i>
                         <i class="fa-solid fa-star" style="color: var(--danger)"></i>
@@ -257,8 +268,8 @@
         </div>
     </section>
 
-    <section id="jumbotron" class="container p-5 m-5">
-        <div class="p-5 text-center bg--blue rounded-3" style="background-color: var(--primary-blue-04)">
+    <section id="jumbotron" class="container my-5 py-5">
+        <div class="container col-lg-11 p-5 text-center rounded-3" style="background-color: var(--primary-blue-04)">
             <h1 class="jumbotron__title p-4" style="color: white">
                 Sewa Mobil di (Lokasimu) Sekarang
             </h1>
@@ -266,12 +277,12 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <a href="/">
-                <button class="btn--primary-green">Mulai Sewa Mobil</button>
+                <button class="btn--primary-green mb-4">Mulai Sewa Mobil</button>
             </a>
         </div>
     </section>
 
-    <section id="FAQ" class="container px-5 pb-5 align-items-start">
+    <section id="FAQ" class="container my-5 px-5 pb-5 align-items-start">
         <div class="row">
             <div class="col-md-6">
                 <h1 class="FAQ__title">Frequently Asked Question</h1>
@@ -417,35 +428,35 @@
                 <p class="footer__article">Connect with us</p>
                 <div class="row ps-2">
                     <span class="fa-stack fa-2x fa-sm mb-3">
-          <i class="fas fa-circle fa-stack-2x" style="color: var(--primary-blue-04)"></i>
-          <i class="fa-stack-1x fa-inverse">
-            <img src="images\fi_facebook.svg" />
-          </i>
-        </span>
+            <i class="fas fa-circle fa-stack-2x" style="color: var(--primary-blue-04)"></i>
+            <i class="fa-stack-1x fa-inverse">
+              <img src="images\fi_facebook.svg" />
+            </i>
+          </span>
                     <span class="fa-stack fa-2x fa-sm mb-3">
-          <i class="fas fa-circle fa-stack-2x" style="color: var(--primary-blue-04)"></i>
-          <i class="fa-stack-1x fa-inverse">
-            <img src="images\fi_instagram.svg" />
-          </i>
-        </span>
+            <i class="fas fa-circle fa-stack-2x" style="color: var(--primary-blue-04)"></i>
+            <i class="fa-stack-1x fa-inverse">
+              <img src="images\fi_instagram.svg" />
+            </i>
+          </span>
                     <span class="fa-stack fa-2x fa-sm mb-3">
-          <i class="fas fa-circle fa-stack-2x" style="color: var(--primary-blue-04)"></i>
-          <i class="fa-stack-1x fa-inverse">
-            <img src="images\fi_twitter.svg" />
-          </i>
-        </span>
+            <i class="fas fa-circle fa-stack-2x" style="color: var(--primary-blue-04)"></i>
+            <i class="fa-stack-1x fa-inverse">
+              <img src="images\fi_twitter.svg" />
+            </i>
+          </span>
                     <span class="fa-stack fa-2x fa-sm mb-3">
-          <i class="fas fa-circle fa-stack-2x" style="color: var(--primary-blue-04)"></i>
-          <i class="fa-stack-1x fa-inverse">
-            <img src="images\fi_mail.svg" />
-          </i>
-        </span>
+            <i class="fas fa-circle fa-stack-2x" style="color: var(--primary-blue-04)"></i>
+            <i class="fa-stack-1x fa-inverse">
+              <img src="images\fi_mail.svg" />
+            </i>
+          </span>
                     <span class="fa-stack fa-2x fa-sm mb-3">
-          <i class="fas fa-circle fa-stack-2x" style="color: var(--primary-blue-04)"></i>
-          <i class="fa-stack-1x fa-inverse">
-            <img src="images\fi_twitch.svg" />
-          </i>
-        </span>
+            <i class="fas fa-circle fa-stack-2x" style="color: var(--primary-blue-04)"></i>
+            <i class="fa-stack-1x fa-inverse">
+              <img src="images\fi_twitch.svg" />
+            </i>
+          </span>
                 </div>
             </div>
             <div class="col">
@@ -477,10 +488,11 @@
                     0: {
                         items: 1,
                     },
-                    600: {
+                    577: {
                         items: 1,
+                        stagePadding: 180,
                     },
-                    1000: {
+                    1080: {
                         items: 1,
                         stagePadding: 300,
                     },
