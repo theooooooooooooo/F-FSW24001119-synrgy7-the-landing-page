@@ -1,18 +1,12 @@
 {
-  "name": "html-css",
-  "version": "1.0.0",
-  "description": "A template for HTML and CSS",
-  "main": "index.html",
-  "scripts": {
-    "start": "serve"
-  },
-  "keywords": [
-    "html",
-    "css"
-  ],
-  "author": "Ives van Hoorne",
-  "license": "MIT",
-  "devDependencies": {
-    "serve": "11.2.0"
-  }
+    "name": "binar-fsw-challenge-04",
+    "version": "1.0.0",
+    "description": "Project HTTP Server dan DOM",
+    "main": "server/index.js",
+    "author": "Fikri Rahmat Nurhidayat <fnurhidayat@binar.co.id>",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "start": "node server/index.js"
+    }
 }

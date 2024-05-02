@@ -1,5 +1,39 @@
-# Responsive Landing Page
-## Challenge Chapter 2 Fullstack Web Javascript SYNRGY Academy Batch 7
-Code Sandbox: [Challenge Chapter 2](https://codesandbox.io/p/sandbox/f-fsw24001119-synrgy7-the-landing-page-ch2-26g32l) <br />
-Code Sandbox Preview: [Preview](https://26g32l.csb.app/index.html)<br />
-Prototype: [Figma](https://www.figma.com/file/QiNXZPX7OwUeFzqSPuiQBE/BCR---Binar-Car-Rental?type=design&node-id=2%3A703&mode=design&t=VHdzwiDqI9UYDpq1-1)
+# Binar: Challenge 04
+
+- Mulai modifikasi file `server/index.js` apabila ingin membuat HTTP server.
+- Mulai modifikasi folder `public` apabila ingin memodifikasi HTML.
+
+# `Binar` class
+
+Class ini berisi 1 static method saja, yang berfungsi untuk mengambil data mobil dari internet.
+
+```typescript
+interface Car {
+  id: string;
+  plate: string;
+  manufacture: string;
+  model: string;
+  image: string;
+  rentPerDay: number;
+  capacity: number;
+  description: string;
+  transmission: string;
+  available: boolean;
+  type: string;
+  year: string;
+  options: Array<string>;
+  specs: Array<string>;
+}
+
+interface Binar {
+  listCars(filterer: (car: Car) => boolean): Array<Car>
+}
+```
+
+Method `listCars` ini akan menerima fungsi yang mana harus mengembalikan `boolean` sebagai nilainya. 
+Fungsi ini akan dijalankan untuk masing-masing item di dalam list of cars, yang mana jika nilainya `true`,
+maka akan ditampilkan di dalam list tersebut.
+
+# Tips
+
+Just, hack it bro!
